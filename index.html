@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>aMaze - The Ultimate Escape</title>
+
+<meta name="description" content="Challenge your mind with Circular, Rectangular and Triangular mazes. Solve hundreds of handcrafted puzzles in aMaze.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#4F46E5,#7C3AED);
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:56px;
+    margin-bottom:15px;
+}
+
+header p{
+    max-width:700px;
+    margin:auto;
+    font-size:20px;
+    opacity:.95;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    margin:10px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:white;
+    color:#4F46E5;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:#4F46E5;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:70px 0;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:36px;
+    color:#222;
+}
+
+.subtitle{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 45px;
+    color:#666;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#4F46E5;
+}
+
+.mode-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.mode{
+    background:linear-gradient(135deg,#4F46E5,#7C3AED);
+    color:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.mode h3{
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.about{
+    background:white;
+    border-radius:18px;
+    padding:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.about p{
+    margin-bottom:18px;
+}
+
+.cta{
+    background:linear-gradient(135deg,#4F46E5,#7C3AED);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.cta h2{
+    color:white;
+}
+
+footer{
+    background:#111827;
+    color:#ddd;
+    text-align:center;
+    padding:30px;
+}
+
+footer a{
+    color:#7C9EFF;
+    text-decoration:none;
+}
+
+@media(max-width:700px){
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    font-size:18px;
+}
+
+h2{
+    font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🧩 aMaze</h1>
+
+<p>
+The Ultimate Escape! Challenge your mind, sharpen your navigation skills,
+and conquer hundreds of handcrafted maze puzzles.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary"
+href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME">
+Download on Google Play
+</a>
+
+<a class="btn btn-secondary"
+href="privacy-policy.html">
+Privacy Policy
+</a>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="container">
+
+<h2>Welcome to aMaze</h2>
+
+<p class="subtitle">
+
+Discover an exciting puzzle adventure designed for players of all ages.
+Whether you're solving your first maze or tackling the most challenging levels,
+aMaze provides hours of relaxing yet brain-training gameplay.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Game Modes</h2>
+
+<p class="subtitle">
+Every maze type offers a completely different challenge.
+</p>
+
+<div class="mode-grid">
+
+<div class="mode">
+<h3>⭕ Circular Mazes</h3>
+<p>
+Navigate through beautiful circular pathways that require a different way of thinking.
+</p>
+</div>
+
+<div class="mode">
+<h3>⬜ Rectangular Mazes</h3>
+<p>
+Classic maze gameplay with increasingly complex layouts.
+</p>
+</div>
+
+<div class="mode">
+<h3>🔺 Triangular Mazes</h3>
+<p>
+A unique twist that challenges your navigation skills like never before.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2>Features</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎯 300 Levels</h3>
+<p>
+Enjoy 100 handcrafted levels in each maze mode for endless puzzle-solving fun.
+</p>
+</div>
+
+<div class="card">
+<h3>🧠 Progressive Difficulty</h3>
+<p>
+Start with beginner-friendly puzzles and work your way toward expert-level challenges.
+</p>
+</div>
+
+<div class="card">
+<h3>🎮 Smooth Controls</h3>
+<p>
+Easy-to-use touch controls make navigating every maze enjoyable.
+</p>
+</div>
+
+<div class="card">
+<h3>🌍 Play Anywhere</h3>
+<p>
+Enjoy the game anytime, whether you're relaxing at home or traveling.
+</p>
+</div>
+
+<div class="card">
+<h3>👨‍👩‍👧‍👦 For Everyone</h3>
+<p>
+Perfect for kids, adults, puzzle lovers, and anyone looking to train their brain.
+</p>
+</div>
+
+<div class="card">
+<h3>💡 Brain Training</h3>
+<p>
+Improve concentration, logical thinking, memory, and problem-solving skills while having fun.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="about">
+
+<h2>About the Game</h2>
+
+<p>
+
+Welcome to <strong>aMaze: The Ultimate Escape!</strong>
+
+Challenge your mind and test your navigation skills through three unique maze experiences:
+Circular, Rectangular, and Triangular mazes.
+
+</p>
+
+<p>
+
+Explore hundreds of handcrafted levels that gradually increase in difficulty.
+Every puzzle has been carefully designed to keep gameplay fresh, rewarding, and satisfying.
+
+</p>
+
+<p>
+
+Whether you're looking for a quick brain exercise during a break or aiming to master every level,
+aMaze delivers an enjoyable experience for casual players and puzzle enthusiasts alike.
+
+</p>
+
+<p>
+
+<strong>Can you conquer every maze and find the ultimate escape?</strong>
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Ready to Escape?</h2>
+
+<p>
+Download aMaze today and begin your journey through hundreds of exciting maze challenges.
+</p>
+
+<br>
+
+<a class="btn btn-primary"
+href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME">
+
+Download Now
+
+</a>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 aMaze. All Rights Reserved.
+
+</p>
+
+<p>
+
+<a href="privacy-policy.html">Privacy Policy</a> |
+<a href="app-ads.txt">app-ads.txt</a>
+
+</p>
+
+</footer>
+
+</body>
+</html>
